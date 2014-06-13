@@ -15,7 +15,7 @@ class getCar():
         self.preciodia=preciodia
         self.disponible=disponible
         if self.matricula == self.matricula:
-            self.disponible="no"
+            self.disponible="si"
             return self.disponible
         else:
             self.disponible=disponible
