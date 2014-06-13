@@ -30,6 +30,11 @@ class car():
         def getDisponible(self):
             return self.disponible
 
+        def setDisponible(self, disponible):
+            self.disponible=disponible
+        def setPrecioDia(self, precio):
+            self.preciodia=precio
+
         def getCar(self, disp):
             if disp == "si":
                 with open("database/coche.txt", mode="r", encoding="utf-8") as file:

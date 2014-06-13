@@ -5,16 +5,15 @@ class alquiler:
     nifCliente=""
     dateAlquilado=""
     fechaReturnar=""
-    precio=""
-    completada=False
-    def __init__(self,matricula,nifCliente, dateAlquilado,fechaReturnar,precioDia,disp):
+    importe=""
+    operationCompleta=False
+    def __init__(self,matricula,nifCliente, fechaAlquilado,fechaReturnar,importe, operationCompleta):
         self.matricula=matricula
-        self.
-        self.dateAlquilado=dateAlquilado
-        self.fecha_alquiler=fecha_alquiler
-        self.fecha_debolucion=fecha_debolucion
+        self.nifCliente=nifCliente
+        self.fechaAlquilado=fechaAlquilado
+        self.fechaReturnar=fechaReturnar
         self.importe=importe
-        self.completada=completada
+        self.operationCompleta=operationCompleta
 
 
 
@@ -25,20 +24,16 @@ class alquiler:
         return self.nif
 
     def getFecha_alquiler(self):
-        return self.fecha_alquiler
+        return self.fechaAlquilado
 
-    def getFecha_debolucion(self):
-        return self.fecha_debolucion
+    def getFechaRetour(self):
+        return self.fechaReturnar
 
     def getImporte(self):
         return self.importe
 
-    def getCompletada(self):
-        return self.completada
-
-
-
-
+    def getOperationCompleta(self):
+        return self.operationCompleta
 
     def setMatricula(self,matricula):
          self.matricula=matricula
@@ -55,5 +50,7 @@ class alquiler:
     def setImporte(self,importe):
          self.importe=importe
 
-    def setCompletada(self,completada):
-         self.completada=completada
+    def setCompletada(self,operationCompleta):
+         self.operationCompleta=operationCompleta
+
+
