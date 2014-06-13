@@ -1,10 +1,14 @@
 __author__ = 'Amine Banks'
 
-sys.path.insert(0, '../controller')
-from controller.interfaceUser import *
 
 class car():
-    def __init__(self, marca, modelo, preciodia, disponible):
+    matricula=""
+    marca=""
+    modelo=""
+    preciodia=""
+    disponible=""
+    def __init__(self, matricula,marca, modelo, preciodia, disponible):
+        self.matricula=matricula
         self.marca = marca
         self.modelo=modelo
         self.preciodia=preciodia
@@ -16,6 +20,7 @@ class car():
             self.marca = marca
             self.modelo = modelo
             self.preciodia=preciodia
+            self.matricula=matricula
             print("Disponoble:")
 
         def getMarca(self):
@@ -26,11 +31,20 @@ class car():
             return  self.preciodia
         def getDisponible(self):
             return self.disponible
+        def getMatricula(self):
+            return self.matricula
 
         def setDisponible(self, disponible):
             self.disponible=disponible
         def setPrecioDia(self, precio):
             self.preciodia=precio
+        def setMarca(self, marca):
+            self.marca=marca
+        def setModel(self, modelo):
+            self.modelo=modelo
+        def setMatricula(self, matricula):
+            self.matricula=matricula
+
 
 
 

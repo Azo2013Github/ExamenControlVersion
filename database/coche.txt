@@ -1,4 +1,0 @@
-﻿2244;toyota;personal;50;no
-2245;renault;personal;40;no
-2246;peugeot;personal;60;si
-2247;toyota;personal;50;si

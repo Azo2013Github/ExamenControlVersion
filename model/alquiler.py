@@ -1,9 +1,9 @@
 __author__ = 'Amine Banks'
 
-import datetime
+
 import os
 import sys
-sys.path.insert(1, '')
+
 
 
 class alquiler:
@@ -12,16 +12,13 @@ class alquiler:
     dateAlquilado=""
     fechaReturnar=""
     importe=""
-    operationCompleta=False
-    def __init__(self,matricula,nifCliente, fechaAlquilado,fechaReturnar,importe, operationCompleta):
+
+    def __init__(self,matricula,nifCliente, fechaAlquilado,fechaReturnar,importe):
         self.matricula=matricula
         self.nifCliente=nifCliente
         self.fechaAlquilado=fechaAlquilado
         self.fechaReturnar=fechaReturnar
         self.importe=importe
-        self.operationCompleta=operationCompleta
-
-
 
     def getMatricula(self):
         return self.matricula
@@ -56,8 +53,7 @@ class alquiler:
     def setImporte(self,importe):
          self.importe=importe
 
-    def setCompletada(self,operationCompleta):
-         self.operationCompleta=operationCompleta
+
 
     def getWrite(self):
         return str(self.matricula)+";"+str(self.nifCliente)+";"+str(self.fechaAlquilado)+";"+str(self.fechaReturnar)+";"+str(self.importe)
@@ -65,6 +61,8 @@ class alquiler:
     def getWrite(self):
         with open("coches.txt", mode="a", encoding="utf-8") as file:
             file.write(self.getWrite())
+
+a = alquiler()
 
 
 
