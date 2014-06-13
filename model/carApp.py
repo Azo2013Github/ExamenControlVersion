@@ -1,5 +1,6 @@
 __author__ = 'Amine Banks'
 
+import re
 
 class getCar():
     matricula=""
@@ -55,7 +56,13 @@ class getCar():
                 file.write(self.getToFile())
 
 
-        #
+        #leer el contenido del archivo:
+
+        def getRead(self):
+            with open('alquiler.txt', mode='r+',encoding ='utf-8') as file:
+             if re.search(file.read(),self.matricula):
+                 file.write(self.getToFile())
+
 
 
 

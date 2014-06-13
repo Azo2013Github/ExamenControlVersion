@@ -46,7 +46,19 @@ class cliente():
                             print("no se alquilado: ")
 
 
-            #listar los coches disponibles
+            #listar los coches disponibles en la aplicacion y disponibles:
+
+            def searchCar(self):
+                with open('fileCohes.txt', mode='r',encoding ='utf-8') as file:
+                    for i in file:
+                        datos=i.split(";")
+                        print(datos)
+                        dispo = carApp.getCar.__init__(datos[0], datos[1], datos[2], datos[3], datos[4])
+                        if dispo.getDisponible()==True:
+                            print("datos coches: ", dispo.getMatricula, dispo.getMarca, dispo.getModelo, dispo.getPrecioDia, dispo.getDisponible)
+                        else:
+                            print("El coche no esta disponible a alquilar: ")
+
 
 
 

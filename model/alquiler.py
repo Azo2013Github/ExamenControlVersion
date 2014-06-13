@@ -3,6 +3,8 @@ __author__ = 'Amine Banks'
 
 import os
 import sys
+import re
+import os.path
 
 
 
@@ -67,6 +69,7 @@ class getAquiler:
     #conocer los ingresos totales obtenidos en un periodo de fechas:
             def getIngress(self):
                 n= input("Ingreso total: ")
+
 
 
 
