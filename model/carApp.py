@@ -54,6 +54,7 @@ class getCar():
         def addCar(self):
             with open("coche.txt", mode="a", encoding="utf-8") as file:
                 file.write(self.getToFile())
+                print(file)
 
 
         #leer el contenido del archivo:
