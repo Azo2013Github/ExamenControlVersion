@@ -3,8 +3,6 @@ __author__ = 'Amine Banks'
 import os
 import sys
 
-sys.path.insert(0, '../controller')
-from interfaceUser import *
 
 class car():
 
@@ -20,6 +18,7 @@ class car():
             self.marca = marca
             self.modelo = modelo
             self.preciodia=preciodia
+            print("Disponoble:")
 
         def getMarca(self):
             return self.marca
@@ -40,6 +39,9 @@ class car():
                 with open("database/coche.txt", mode="r", encoding="utf-8") as file:
                     for i in file:
                         print(i)
+
+a = car("../database/coche.txt")
+print(a.getCar())
 
 
 

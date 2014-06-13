@@ -5,8 +5,9 @@ import os
 
 import datetime
 
-sys.path.insert(0, "../model/carApp")
-from
+
+
+sys.path.insert(0, "../model")
 
 
 while(True):
@@ -21,6 +22,7 @@ while(True):
       print("2. listar coches no disponibles:")
       optionChosen = int(input("Select a option with 1 and 2:"))
       dbFileRead = dbFileRead
+
     elif optionChosen=="2":
       print("\n ")
     elif optionChosen=="3":

@@ -1,5 +1,11 @@
 __author__ = 'Amine Banks'
 
+import datetime
+import os
+import sys
+sys.path.insert(1, '')
+
+
 class alquiler:
     matricula=""
     nifCliente=""
@@ -52,5 +58,8 @@ class alquiler:
 
     def setCompletada(self,operationCompleta):
          self.operationCompleta=operationCompleta
+
+
+
 
 
