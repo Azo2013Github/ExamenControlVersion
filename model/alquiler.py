@@ -74,6 +74,7 @@ class getAquiler:
 
 
 
+
 a = getAquiler()
 print(a.getWrite())
 

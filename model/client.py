@@ -5,9 +5,9 @@ import carApp
 import datetime
 import os.path
 import sys
-#sys.path.insert(carApp)
-
-
+import alquiler
+sys.path.insert(carApp)
+sys.path.insert(alquiler)
 
 
 class cliente():
@@ -58,6 +58,15 @@ class cliente():
                             print("datos coches: ", dispo.getMatricula, dispo.getMarca, dispo.getModelo, dispo.getPrecioDia, dispo.getDisponible)
                         else:
                             print("El coche no esta disponible a alquilar: ")
+
+
+
+
+
+
+
+
+
 
 
 
