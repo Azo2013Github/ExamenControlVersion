@@ -61,7 +61,7 @@ class getCar():
         #leer el contenido del archivo:
 
         def getRead(self):
-            with open('alquiler.txt', mode='r+',encoding ='utf-8') as file:
+            with open('coche.txt', mode='r+',encoding ='utf-8') as file:
              if re.search(file.read(),self.matricula):
                  file.write(self.getToFile())
 
