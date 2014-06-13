@@ -1,10 +1,7 @@
 __author__ = 'Amine Banks'
 
-import os
-import sys
-
 sys.path.insert(0, '../controller')
-from interfaceUser import *
+from controller.interfaceUser import *
 
 class car():
     def __init__(self, marca, modelo, preciodia, disponible):
@@ -34,6 +31,8 @@ class car():
             self.disponible=disponible
         def setPrecioDia(self, precio):
             self.preciodia=precio
+
+
 
 
 

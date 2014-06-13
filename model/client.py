@@ -10,6 +10,14 @@ def __init__(self, nombre, apellido, nif):
             return self.appellido
         def getnif(self):
             return  self.nif
+        def setNombre(self, nombre):
+            self.nombre = nombre
+        def setApellido(self, apellido):
+            self.appellido=apellido
+        def setNif(self, nif):
+            self.nif = nif
+        def cocheAquiladoCliente(self):
+            with open("fileCohes.txt", mode="a", encoding="utf-8") as file:
 
 
 

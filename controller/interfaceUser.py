@@ -3,13 +3,7 @@ __author__ = 'Amine Banks'
 import sys
 import os
 
-import datetime
-
-
-
-sys.path.insert(0, "../model")
-from DBController import *
-
+sys.path.insert(0, '../model')
 
 while(True):
     print("1.Un cliente alquila coche disponible!")
@@ -18,13 +12,11 @@ while(True):
     print("4.anadir un nuevo coche: ")
     print("5 Conocer los ingresos totales obtenidos en un periodo de fechas")
     optionChosen = int(input("Select a option do you want:"))
+
+    carApp = carApp
+
     if optionChosen=="1":
-        print(a.getWrite())
-        print("1. listar coches disponibles: ")
-        print("2. listar coches no disponibles:")
-        optionChosen = int(input("Select a option with 1 and 2:"))
-        dbFileRead = dbFileRead
-        carApp = carApp
+      print("")
 
     elif optionChosen=="2":
       print("\n ")
@@ -37,10 +29,6 @@ while(True):
     elif optionChosen=="6":
         print("\n Good bye")
         break
-
-
-
-
 
 
 

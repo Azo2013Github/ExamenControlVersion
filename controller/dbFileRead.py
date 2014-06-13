@@ -1,11 +1,8 @@
 __author__ = 'Amine Banks'
 
-import os
-import sys
-
 sys.path.insert(0,"../interfaceUser")
 
-from interfaceUser import *
+from controller.interfaceUser import *
 
 class DBController():
     def __init__(self, pathToDb="../database/coche.txt"):
