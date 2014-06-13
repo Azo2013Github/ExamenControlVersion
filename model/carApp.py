@@ -51,6 +51,7 @@ class getCar():
         def getToFile(self):
             return str(self.matricula)+";"+str(self.marca)+";"+str(self.importe)+";"+str(self.preciodia)+";"+str(self.disponible)
 
+    #anadir un nuevo coche
         def addCar(self):
             with open("coche.txt", mode="a", encoding="utf-8") as file:
                 file.write(self.getToFile())
