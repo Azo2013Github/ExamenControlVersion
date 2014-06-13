@@ -1,7 +1,7 @@
 __author__ = 'Amine Banks'
 
 
-class car():
+class getCar():
     matricula=""
     marca=""
     modelo=""
@@ -13,15 +13,16 @@ class car():
         self.modelo=modelo
         self.preciodia=preciodia
         self.disponible=disponible
-        if disponible == "no":
+        if self.matricula == self.matricula:
             self.disponible="no"
+            return self.disponible
         else:
             self.disponible=disponible
             self.marca = marca
             self.modelo = modelo
             self.preciodia=preciodia
             self.matricula=matricula
-            print("Disponoble:")
+            print("No disponible:")
 
         def getMarca(self):
             return self.marca
@@ -44,6 +45,19 @@ class car():
             self.modelo=modelo
         def setMatricula(self, matricula):
             self.matricula=matricula
+
+    #aanadir un nuevo coche:
+        def getToFile(self):
+            return str(self.matricula)+";"+str(self.marca)+";"+str(self.importe)+";"+str(self.preciodia)+";"+str(self.disponible)
+
+        def addCar(self):
+            with open("coche.txt", mode="a", encoding="utf-8") as file:
+                file.write(self.getToFile())
+
+
+        #
+
+
 
 
 

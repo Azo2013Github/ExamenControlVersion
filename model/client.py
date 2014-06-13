@@ -2,12 +2,11 @@ __author__ = 'Amine Banks'
 
 import re
 import carApp
-import alquileres
 import datetime
 import os.path
 import sys
-sys.path.insert(carApp)
-sys.path.insert(alquiler)
+#sys.path.insert(carApp)
+
 
 
 
@@ -37,14 +36,25 @@ class cliente():
                     for i in file:
                         datos = i.split(";")
             #coger los indices de datos para cada Columna: y tambien incluire la clase carApp para coger la matricula del coche
-                        carApp.car(datos[0], datos[1], datos[2], datos[3], datos[4])
-                        if datos[1] == self.nif and carApp.car.getDisponible("matricula"):
+                        carApp.getCar.__init__(datos[0], datos[1], datos[2], datos[3], datos[4])
+                        if datos[1] == self.nif and carApp.getCar.getDisponible("matricula"):
                             print("se ha alquilado y calcula el numero de dia:")
                             numeroDia = input("Introduce el numero de dia: ")
                             precio = carApp.car.getPrecioDia*numeroDia
                             print(precio)
                         else:
                             print("no se alquilado: ")
+
+
+            #listar los coches disponibles
+
+
+
+
+
+
+
+
 
 
 

@@ -6,7 +6,7 @@ import sys
 
 
 
-class alquiler:
+class getAquiler:
     matricula=""
     nifCliente=""
     dateAlquilado=""
@@ -55,14 +55,24 @@ class alquiler:
 
 
 
-    def getWrite(self):
+    def getToString(self):
         return str(self.matricula)+";"+str(self.nifCliente)+";"+str(self.fechaAlquilado)+";"+str(self.fechaReturnar)+";"+str(self.importe)
 
     def getWrite(self):
-        with open("coches.txt", mode="a", encoding="utf-8") as file:
-            file.write(self.getWrite())
+        with open("alquiler.txt", mode="a", encoding="utf-8") as file:
+            file.write(self.getString())
 
-a = alquiler()
+
+
+    #conocer los ingresos totales obtenidos en un periodo de fechas:
+            def getIngress(self):
+                n= input("Ingreso total: ")
+
+
+
+
+a = getAquiler()
+print(a.getWrite())
 
 
 
