@@ -1,0 +1,54 @@
+__author__ = 'Amine Banks'
+
+import os
+import sys
+
+sys.path.insert(0, '../controller')
+from interfaceUser import *
+
+class car():
+
+    def __init__(self, marca, modelo, preciodia, disponible):
+        self.marca = marca
+        self.modelo=modelo
+        self.preciodia=preciodia
+        self.disponible=disponible
+        if disponible == "no":
+            self.disponible="no"
+        else:
+            self.disponible=disponible
+            self.marca = marca
+            self.modelo = modelo
+            self.preciodia=preciodia
+
+        def getMarca(self):
+            return self.marca
+        def getModel(self):
+            return self.modelo
+        def getPrecioDia(self):
+            return  self.preciodia
+        def getDisponible(self):
+            return self.disponible
+
+        def getCar(self, disp):
+            if disp == "si":
+                with open("database/coche.txt", mode="r", encoding="utf-8") as file:
+                    for i in file:
+                        print(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
