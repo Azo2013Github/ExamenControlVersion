@@ -8,6 +8,7 @@ import datetime
 
 
 sys.path.insert(0, "../model")
+from DBController import *
 
 
 while(True):
@@ -18,10 +19,12 @@ while(True):
     print("5 Conocer los ingresos totales obtenidos en un periodo de fechas")
     optionChosen = int(input("Select a option do you want:"))
     if optionChosen=="1":
-      print("1. listar coches disponibles: ")
-      print("2. listar coches no disponibles:")
-      optionChosen = int(input("Select a option with 1 and 2:"))
-      dbFileRead = dbFileRead
+        print(a.getWrite())
+        print("1. listar coches disponibles: ")
+        print("2. listar coches no disponibles:")
+        optionChosen = int(input("Select a option with 1 and 2:"))
+        dbFileRead = dbFileRead
+        carApp = carApp
 
     elif optionChosen=="2":
       print("\n ")
@@ -34,6 +37,10 @@ while(True):
     elif optionChosen=="6":
         print("\n Good bye")
         break
+
+
+
+
 
 
 

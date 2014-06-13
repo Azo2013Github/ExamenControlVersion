@@ -2,6 +2,7 @@ __author__ = 'Amine Banks'
 
 from distutils.core import setup
 
+
 setup(
     name="ExamenControlVersion",
     version="0.1",

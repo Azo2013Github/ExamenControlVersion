@@ -3,9 +3,10 @@ __author__ = 'Amine Banks'
 import os
 import sys
 
+sys.path.insert(0, '../controller')
+from interfaceUser import *
 
 class car():
-
     def __init__(self, marca, modelo, preciodia, disponible):
         self.marca = marca
         self.modelo=modelo
@@ -34,14 +35,7 @@ class car():
         def setPrecioDia(self, precio):
             self.preciodia=precio
 
-        def getCar(self, disp):
-            if disp == "si":
-                with open("database/coche.txt", mode="r", encoding="utf-8") as file:
-                    for i in file:
-                        print(i)
 
-a = car("../database/coche.txt")
-print(a.getCar())
 
 
 

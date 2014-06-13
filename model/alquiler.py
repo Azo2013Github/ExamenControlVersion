@@ -59,6 +59,15 @@ class alquiler:
     def setCompletada(self,operationCompleta):
          self.operationCompleta=operationCompleta
 
+    def getWrite(self):
+        return str(self.matricula)+";"+str(self.nifCliente)+";"+str(self.fechaAlquilado)+";"+str(self.fechaReturnar)+";"+str(self.importe)
+
+    def getWrite(self):
+        with open("coches.txt", mode="a", encoding="utf-8") as file:
+            file.write(self.getWrite())
+
+
+
 
 
 
