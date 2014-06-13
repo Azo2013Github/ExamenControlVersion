@@ -39,8 +39,10 @@ class cliente():
             #coger los indices de datos para cada Columna: y tambien incluire la clase carApp para coger la matricula del coche
                         carApp.car(datos[0], datos[1], datos[2], datos[3], datos[4])
                         if datos[1] == self.nif and carApp.car.getDisponible("matricula"):
-                            print("se ha alquilado")
-                            precio = carApp.car.getPrecioDia*
+                            print("se ha alquilado y calcula el numero de dia:")
+                            numeroDia = input("Introduce el numero de dia: ")
+                            precio = carApp.car.getPrecioDia*numeroDia
+                            print(precio)
                         else:
                             print("no se alquilado: ")
 
